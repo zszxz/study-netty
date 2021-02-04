@@ -1,0 +1,16 @@
+
+
+spring:
+  datasource:
+    druid:
+      #本地
+      url: jdbc:postgresql://localhost:5432/springboot
+      username: postgres
+      password: 123456
+      driver-class-name: org.postgresql.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    mapUnderscoreToCamelCase: true
+server:
+  port: 8086
