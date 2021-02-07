@@ -1,4 +1,4 @@
-package com.zszxz.hello.service;
+package com.zszxz.service;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -16,15 +16,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        // 转为字节缓冲区
-        ByteBuf buf = (ByteBuf)msg;
-        // 字节数组
-        byte[] bytes = new byte[buf.readableBytes()];
-        // 缓冲区数据读入字节数组
-        buf.readBytes(bytes);
-        // 编码转为字符串
-        String body = (new String(bytes, "UTF-8"));
-        System.out.println(" get the data from client : " + body);
+        System.out.println(" get the data from client : " + msg);
         // 构造响应数据
         String responseData = "那天刚刚好遇见你";
         //  数据写入缓冲区

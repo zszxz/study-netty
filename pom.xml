@@ -11,6 +11,7 @@
     <modules>
         <module>springboot</module>
         <module>hello</module>
+        <module>depart-combine</module>
     </modules>
     <!-- springboot start 父类 -->
     <parent>

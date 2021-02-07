@@ -1,4 +1,4 @@
-package com.zszxz.hello.client;
+package com.zszxz.client;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -33,14 +33,16 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
      */
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-
-        byte[] bytes = "关注公众号知识追寻者回复netty获取本教程源码".getBytes();
-        // 创建节字缓冲区
-        ByteBuf message = Unpooled.buffer(bytes.length);
-        // 将数据写入缓冲区
-        message.writeBytes(bytes);
-        // 写入数据
-        ctx.writeAndFlush(message);
+        for (int i=0;i<100;i++){
+            //byte[] bytes = "关注公众号知识追寻者回复netty获取本教程源码\n".getBytes();
+            byte[] bytes = "关注公众号知识追寻者回复netty获取本教程源码%".getBytes();
+            // 创建节字缓冲区
+            ByteBuf message = Unpooled.buffer(bytes.length);
+            // 将数据写入缓冲区
+            message.writeBytes(bytes);
+            // 写入数据
+            ctx.writeAndFlush(message);
+        }
 
     }
 
