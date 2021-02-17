@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="depart-combine" />
         <module name="springboot" />
+        <module name="reconnect" />
         <module name="hello" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="depart-combine" target="1.8" />
       <module name="hello" target="1.8" />
+      <module name="reconnect" target="1.8" />
       <module name="springboot" target="1.8" />
       <module name="study-netty" target="1.8" />
     </bytecodeTargetLevel>
@@ -22,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="depart-combine" options="-parameters" />
       <module name="hello" options="-parameters" />
+      <module name="reconnect" options="-parameters" />
       <module name="springboot" options="-parameters" />
       <module name="study-netty" options="-parameters" />
     </option>

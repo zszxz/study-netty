@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/depart-combine/depart-combine.iml" filepath="$PROJECT_DIR$/depart-combine/depart-combine.iml" />
       <module fileurl="file://$PROJECT_DIR$/hello/hello.iml" filepath="$PROJECT_DIR$/hello/hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reconnect/reconnect.iml" filepath="$PROJECT_DIR$/reconnect/reconnect.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-netty.iml" filepath="$PROJECT_DIR$/study-netty.iml" />
     </modules>
