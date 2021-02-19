@@ -13,6 +13,7 @@
         <module>hello</module>
         <module>depart-combine</module>
         <module>reconnect</module>
+        <module>heart-beat</module>
     </modules>
     <!-- springboot start 父类 -->
     <parent>

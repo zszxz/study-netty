@@ -9,11 +9,13 @@
         <module name="depart-combine" />
         <module name="springboot" />
         <module name="reconnect" />
+        <module name="heart-beat" />
         <module name="hello" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="depart-combine" target="1.8" />
+      <module name="heart-beat" target="1.8" />
       <module name="hello" target="1.8" />
       <module name="reconnect" target="1.8" />
       <module name="springboot" target="1.8" />
@@ -23,6 +25,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="depart-combine" options="-parameters" />
+      <module name="heart-beat" options="-parameters" />
       <module name="hello" options="-parameters" />
       <module name="reconnect" options="-parameters" />
       <module name="springboot" options="-parameters" />
