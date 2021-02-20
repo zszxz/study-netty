@@ -14,6 +14,8 @@
         <module>depart-combine</module>
         <module>reconnect</module>
         <module>heart-beat</module>
+        <module>encode-decode</module>
+        <module>protobuf</module>
     </modules>
     <!-- springboot start 父类 -->
     <parent>
