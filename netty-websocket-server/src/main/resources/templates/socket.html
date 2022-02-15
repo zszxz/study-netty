@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户页面</title>
+</head>
+<body>
+<div id="msg"></div>
+<input type="text" id="text">
+<input type="submit" value="send" onclick="send()">
+</body>
+<script>
+    var msg = document.getElementById("msg");
+    var wsServer = 'ws://127.0.0.1:8096';
+    var websocket = new WebSocket(wsServer);
+    //监听连接打开
+    websocket.onopen = function (evt) {
+        msg.innerHTML = "The connection is open";
+    };
+
+    //监听服务器数据推送
+    websocket.onmessage = function (evt) {
+        msg.innerHTML += "<br>" + evt.data;
+    };
+
+    //监听连接关闭
+    websocket.onclose = function (evt) {
+        alert("连接关闭");
+    };
+
+    function send() {
+        var text = document.getElementById("text").value
+        websocket.send(text);
+    }
+</script>
+</html>
